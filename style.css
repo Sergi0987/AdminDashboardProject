@@ -1,0 +1,63 @@
+:root {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    background-color: red;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+.sidebar {
+    grid-row: 1 / 4;
+    background-color: wheat;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.header {
+    grid-column:  2 / 3;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 2px;
+
+}
+
+.searchBar {
+    background-color: blue;
+    flex: .5;
+}
+
+.taskBar {
+    background-color: purple;
+    flex: .5;
+}
+
+.searchBar, .taskBar {
+    border-radius: 5px;
+}
+
+.main-content {
+    background-color: white;
+    grid-row: span 2;
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    padding: 10px 20px 30px 40px;
+}
+
+.main-content > div {
+
+
+    background-color: blue;
+}
+
+.announcement .bottom{
+    background-color: red;
+}
+
